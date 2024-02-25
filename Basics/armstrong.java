@@ -4,11 +4,18 @@ import java.util.Scanner;
 
 public class armstrong {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter to check armstrong or not: ");
-        int n = sc.nextInt();
-        System.out.println(isArmstrong(n));
-        sc.close();
+        //User input
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.println("Enter to check armstrong or not: ");
+    //     int n = sc.nextInt();
+    //     System.out.println(isArmstrong(n));
+    //     sc.close();
+        //print all 3 digit armstrong
+        for (int i = 100; i < 1000; i++) {
+            if (isArmstrong(i)) {
+                System.out.print(i + " ");
+            }
+        }
     }
     static boolean isArmstrong(int n){
         int sum=0;
