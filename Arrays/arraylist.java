@@ -13,8 +13,10 @@ public class arraylist {
         list.add(34);
         list.add(3344);
         System.out.println(list);
+
         list.set(0, 3434);
         System.out.println(list);
+        
         System.out.println(list.contains(9090909));//false
 
     }

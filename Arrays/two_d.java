@@ -20,6 +20,7 @@ public class two_d {
         //         System.out.print(arr[row][col]+"");
         //     }
         //     System.out.println();
+        
         //method-2
         for(int row=0;row<arr.length;row++){
             System.out.print(Arrays.toString(arr[row]));
