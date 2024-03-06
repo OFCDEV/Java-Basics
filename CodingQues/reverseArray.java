@@ -19,9 +19,9 @@ public class reverseArray {
         }
     }
     static void swap(int[] arr,int index1,int index2){
-        int temp = index1;
-        index1 = index2;
-        index2 = temp;
+        int temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
     }
     
 }

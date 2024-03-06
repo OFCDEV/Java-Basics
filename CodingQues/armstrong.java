@@ -7,12 +7,12 @@ public class armstrong {
     static boolean isArmstrong(int n){
         int temp = n;
         int sum = 0;
-        while(n>0){
-            int rem = n%10;
+        while(temp>0){
+            int rem = temp%10;
             sum = (sum)+(rem*rem*rem);
-            n = n/10;
+            temp/=10;
         }
-        if (sum == temp) {
+        if (sum == n) {
             return true;
         }else{
             return false;
