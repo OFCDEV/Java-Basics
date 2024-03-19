@@ -12,6 +12,7 @@ public class linear {
         }
         return -1;
     }
+    //FOr string
     static boolean search(String str,char target){
         if(str.length() == 0){
             return false;
