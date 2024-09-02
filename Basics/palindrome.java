@@ -11,6 +11,6 @@ public class palindrome {
             rev = 10*rev+org%10;
             org=org/10;
         }
-        return rev == org;
+        return rev == n;
     }
 }
