@@ -1,35 +1,40 @@
 package OOPs;
+// Base Class
+class Phone {
+    String brand;
+    String model;
 
-public class inheritance {
-    double h;
-    double w;
-    double l;
-
-    inheritance(){
-        this.h = -1;
-        this.w = -1;
-        this.l = -1;
+    Phone(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
     }
 
-    inheritance(double side){
-        this.h = side;
-        this.w = side;
-        this.l = side;
-    }
-
-    inheritance(double l,double h,double w){
-        this.h = h;
-        this.w = w;
-        this.l = l;
-    }
-
-    inheritance(inheritance old){
-        this.h = old.h;
-        this.w = old.w;
-        this.l = old.l;
-    }
-
-    public void info(){
-        System.out.println("Box is running");
+    void displayDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
     }
 }
+
+// Derived Class
+class SmartPhone extends Phone {
+    int storage;
+
+    SmartPhone(String brand, String model, int storage) {
+        super(brand, model);
+        this.storage = storage;
+    }
+
+    @Override
+    void displayDetails() {
+        super.displayDetails();
+        System.out.println("Storage: " + storage + "GB");
+    }
+}
+
+public class inheritance {
+    public static void main(String[] args) {
+        SmartPhone myPhone = new SmartPhone("Apple", "iPhone 13", 256);
+        myPhone.displayDetails();
+    }
+}
+
