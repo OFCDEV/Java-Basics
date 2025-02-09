@@ -1,0 +1,7 @@
+A thread, also known as a lightweight process, is the smallest unit of execution within a process. Multiple threads can exist within the same process, sharing the same memory space and resources. Threads can run concurrently, making it easier to perform multiple tasks simultaneously.
+
+A process is an instance of a program that is being executed. Each process has its own memory space and resources, which means it operates independently of other processes. Processes are isolated from each other to prevent data corruption and ensure security.
+
+Multi-threading is the capability of a CPU to manage multiple threads of execution within a single process.
+
+Concurrency is the ability to run multiple tasks or processes simultaneously, which improves the responsiveness of applications.
